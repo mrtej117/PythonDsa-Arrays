@@ -1,14 +1,22 @@
-# input 
-
-# arr = [ 1 ,4 ,7, 8 ,9 ,4,2 ,0]
-
-
-def brute_force(arr):
-
-    secondlargest = sorted(arr ,reverse = True)
-
-    return secondlargest[1]
-
-
-arr = [ 1 ,4 ,7, 8 ,9 ,4,2 ,0]
-print("Second Largest :" ,brute_force(arr))
+class Solution:
+    def getSecondLargest(self, arr):
+        
+        arr = sorted(set(arr),reverse = True)
+        
+        if len(arr) < 2:
+            return -1
+            
+        return arr[1]
+        
+        # here set is the python built function where it will remove the 
+        # duplicates and converts it into set
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
